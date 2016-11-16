@@ -1,0 +1,69 @@
+﻿<!--
+* Title              : INFT3050 Assignment 2
+* File Name          : BetterMaster.Master
+* Author             : Alan Nguyen
+* Student Number     : 3131950
+*
+* Description        : This is the master page for the web application. The main purpose of this in this assignment
+                       is to keep the navigation menus consistent between pages.
+                  
+*
+-->
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BetterMaster.master.cs" Inherits="Assign2_c3131950.BetterMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Title</title>
+ 
+    <link href ="css/mainstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/cssreset.css" rel="sidebar" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+          
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+       <asp:Button ID="something" runat="server" OnClick="something_Click" />
+    <div class="container">
+       <div class="header">
+           <div class="header-heading">
+            <h1>B.E.T.T.E.R</h1>
+            <h2>BATTLING ELEMENTAL TITANS THROUGH EXERCISING ROUTINES</h2>
+               </div>
+           
+       </div>
+        <div class="navbar">
+                <ul class ="nav">
+                    <li><a href="Home.aspx">HOME</a></li>
+                    <li><a href="Account.aspx">ACCOUNT MANAGEMENT</a></li>
+                    
+                    <li><a href="BattleHome.aspx">BATTLE</a></li>
+                    <li><a href="Hof.aspx">HALL OF FAME</a></li>
+                    <li><a href="Registration.aspx">REGISTER</a></li>
+                    <li><a href="Login.aspx">LOGIN</a></li>
+                    <li>
+                        <a href="Character.aspx">CHARACTER MANAGEMENT</a>
+                           
+                        
+                    </li>
+                </ul>
+            </div>
+        
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+
+            </asp:ContentPlaceHolder>
+        </div>
+        
+            </div>
+        
+    </form>
+</body>
+</html>

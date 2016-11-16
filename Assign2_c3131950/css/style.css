@@ -1,0 +1,72 @@
+﻿#maintitle {
+    text-align:center;
+    font-family: "MotionControl";
+    margin-top:15%;
+    
+}
+#maintitle  h1 {
+    font-size:64px;
+    }
+#maintitle  h3 {
+    font-size: 20px;
+    }
+
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
+#loginreg {
+    margin: 0 auto;
+    display:table;
+}
+#loginreg  ul {
+    min-width:696px;
+     margin:0;
+     padding:0;
+     display: inline; /* Shows each item side-by-side */
+     list-style: none;
+     text-align: center;
+
+}
+#loginreg ul li {
+    
+    display:inline;
+}
+#loginreg a {
+    left:50%;
+    display: block;
+    float: left;
+     padding: 0 1em; /* Provides horizontal separation between menu items */
+     font-size:30px;
+     font-family:MotionControl;
+     color:black;
+     
+}
+#loginreg a:link {
+    
+    color:black;
+    text-decoration: none;
+    }
+#loginreg a:visited{
+
+    text-decoration: none;
+    color:black;
+}
+    #loginreg a:hover {
+     
+        text-decoration: none;
+        font-size:36px;
+        color:black;
+
+    }
+
+    #loginreg a.active {
+        
+        text-decoration: none;
+        color:black;
+    }
+
+@font-face {
+    font-family: 'MotionControl';
+    src: url('../Fonts/motion-control.bold.otf') format('truetype');
+}
